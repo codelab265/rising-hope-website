@@ -64,9 +64,11 @@ function Navbar() {
                             </Link>
                         ))}
                     </nav>
-                    <Button className="text-base font-medium font-roboto px-8 bg-[#1d2130] hover:bg-[#1d2130]/80">
-                        Donate
-                    </Button>
+                    <Link href="/donate">
+                        <Button className="text-base font-medium font-roboto px-8 bg-[#1d2130] hover:bg-[#1d2130]/80">
+                            Donate
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </header>
