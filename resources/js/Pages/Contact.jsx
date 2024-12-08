@@ -36,9 +36,9 @@ function Contact() {
         <MainLayout>
             <Head title="Contact us" />
             <section className="bg-[#fbecc6] pt-[76px] pb-[96px]">
-                <div className="container max-w-[1200px] mx-auto grid grid-cols-2 gap-[96px]">
+                <div className="px-5 lg:px-0 container max-w-[1200px] mx-auto grid grid-rows-1 lg:grid-cols-2 gap-[96px]">
                     <div className="flex gap-6">
-                        <div className="w-[80px]">
+                        <div className="hidden md:block w-[80px]">
                             <img
                                 src="/images/line.png"
                                 alt="line"
@@ -49,7 +49,7 @@ function Contact() {
                             <div className="text-[#1d2130] text-base font-bold font-roboto uppercase tracking-widest">
                                 Contact us
                             </div>
-                            <div className="w-[461px] text-[#1d2130] text-[56px] font-bold font-roboto leading-[67.20px] mt-8">
+                            <div className="max-w-[461px] text-[#1d2130] text-[38px] md:text-[56px] font-bold font-roboto leading-[67.20px] mt-8">
                                 We'd love to hear from you
                             </div>
                             <div className="max-w-[594px] text-[#525560] text-base font-normal font-roboto leading-relaxed mt-4">
@@ -66,34 +66,31 @@ function Contact() {
                             </div>
                             <div className="flex gap-4">
                                 <div className="text-[#1d2130] text-base font-normal font-roboto leading-7">
-                                    +265 9012346514
-                                </div>
-                                <div className="text-[#1d2130] text-base font-normal font-roboto leading-7">
-                                    hello@codelab265.com
+                                    +265 984 615 034
                                 </div>
                             </div>
                         </div>
                         <div className="flex flex-col gap-4">
                             <div className="text-[#1d2130] text-2xl font-bold font-roboto leading-[38.40px]">
-                                Headoffice
+                                Email
                             </div>
                             <div className="w-[302px] text-[#525560] text-base font-normal font-roboto leading-relaxed">
-                                8 Brewery Drive, Lilongwe, Malawi
+                                info@risinghopenetwork.com
                             </div>
                         </div>
-                        <div className="flex flex-col gap-4">
+                        {/* <div className="flex flex-col gap-4">
                             <div className="text-[#1d2130] text-2xl font-bold font-roboto leading-[38.40px]">
                                 Branch Office
                             </div>
                             <div className="w-[302px] text-[#525560] text-base font-normal font-roboto leading-relaxed">
                                 Opp Opolo round about, Lilongwe, Malawi
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
-            <section className="py-[96px]">
-                <div className="max-w-[768px] mx-auto grid grid-cols-2 gap-8">
+            <section className="px-5 lg:px-0 py-[96px]">
+                <div className="max-w-[768px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div className="flex flex-col">
                         <Label>Name</Label>
                         <Input

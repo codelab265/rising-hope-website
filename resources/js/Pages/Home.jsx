@@ -56,15 +56,21 @@ function Home() {
         <MainLayout>
             <Head title="Home" />
             <section className="w-full bg-cover bg-center bg-no-repeat pt-[108px] pb-[64px] relative">
-                <div className="container mx-auto max-w-[1200px]">
-                    <div className="w-full max-w-[640px] text-white text-[64px] font-bold font-roboto leading-[76.80px]">
-                        Empowering Malawians to Rise Above Poverty
+                <div className="container px-5 lg:px-0 mx-auto max-w-[1200px]">
+                    <div className="w-full max-w-[640px] text-white text-center md:text-left text-[48px] md:text-[64px] font-bold font-roboto leading-[76.80px]">
+                        Empowering Lives, Changing Africa
                     </div>
-                    <div className="flex items-center gap-10 mt-12">
-                        <Button className="bg-white text-[#1d2130] text-base font-medium font-roboto px-8">
-                            What We Do
-                        </Button>
-                        <Link href="/" className="flex items-center">
+                    <div className="flex items-center justify-center md:justify-start gap-10 mt-12">
+                        <Link href="/what-we-do">
+                            <Button className="bg-white text-[#1d2130] text-base font-medium font-roboto px-8">
+                                What We Do
+                            </Button>
+                        </Link>
+                        <a
+                            href="https://www.youtube.com/watch?v=sn2NjRPG9Ls"
+                            target="_blank"
+                            className="flex items-center"
+                        >
                             <img
                                 src="/images/play.png"
                                 alt="play"
@@ -73,9 +79,9 @@ function Home() {
                             <div className="text-white text-base font-medium font-roboto ml-[2px]">
                                 Play Video
                             </div>
-                        </Link>
+                        </a>
                     </div>
-                    <div className="mt-[192px] flex items-center justify-between gap-5">
+                    <div className="mt-[192px] items-center justify-between gap-5 hidden md:flex">
                         <div className="text-white text-lg font-medium font-roboto">
                             Serving communities across Malawi
                         </div>
@@ -92,9 +98,9 @@ function Home() {
                 />
             </section>
 
-            <section className="container mx-auto max-w-[1200px] py-[86px] flex items-center gap-[86px]">
-                <div className="w-[60%] flex gap-6">
-                    <div className="w-[80px]">
+            <section className="container px-5 lg:px-0 mx-auto max-w-[1200px] py-[86px] flex flex-col-reverse md:flex-row items-center gap-[86px]">
+                <div className="w-full md:w-[60%] flex gap-6">
+                    <div className="hidden md:block w-[80px]">
                         <img
                             src="/images/line.png"
                             alt="line"
@@ -105,7 +111,7 @@ function Home() {
                         <div className="text-[#1d2130] text-base font-bold font-roboto uppercase tracking-widest">
                             About Rising Hope Network
                         </div>
-                        <div className="w-[608px] text-[#525560] text-base font-normal font-roboto leading-relaxed mt-8">
+                        <div className="max-w-[608px] text-[#525560] text-base font-normal font-roboto leading-relaxed mt-8">
                             Rising Hope Network (RHN) is a social enterprise
                             dedicated to improving the lives of Malawians living
                             below the poverty line. We empower individuals and
@@ -121,32 +127,37 @@ function Home() {
                             and supporting sustainable community development.
                         </div>
                         <div className="mt-12">
-                            <Button className="bg-primary text-black text-base font-medium font-roboto px-8">
+                            <Button className="bg-primary text-black text-base font-medium font-roboto px-8 w-full md:w-auto">
                                 Learn More
                             </Button>
                         </div>
                     </div>
                 </div>
-                <div className="w-[40%]">
+                <div className="w-full md:w-[40%]">
                     <div
                         className="w-full h-[578.34px] bg-cover bg-center bg-no-repeat overflow-hidden rounded-[20px] flex items-center justify-center"
                         style={{
                             backgroundImage: "url('/images/project1.png')",
                         }}
                     >
-                        <img
-                            src="/images/play.png"
-                            alt="play"
-                            className="w-[64px] h-[64px] cursor-pointer"
-                        />
+                        <a
+                            href="https://www.youtube.com/watch?v=4gz_yFRlBsQ"
+                            target="_blank"
+                        >
+                            <img
+                                src="/images/play.png"
+                                alt="play"
+                                className="w-[64px] h-[64px] cursor-pointer"
+                            />
+                        </a>
                     </div>
                 </div>
             </section>
 
             <section className="w-full bg-[#fbecc6] py-[96px]">
-                <div className="container mx-auto max-w-[1200px] flex gap-[86px]">
-                    <div className="w-[60%] flex gap-6">
-                        <div className="w-[80px]">
+                <div className="container px-5 lg:px-0 mx-auto max-w-[1200px] flex flex-col-reverse md:flex-row  gap-[86px]">
+                    <div className="w-full md:w-[60%] flex gap-6">
+                        <div className="hidden md:block w-[80px]">
                             <img
                                 src="/images/line.png"
                                 alt="line"
@@ -157,15 +168,15 @@ function Home() {
                             <div className="text-[#1d2130] text-base font-bold font-roboto uppercase tracking-widest">
                                 Our Services
                             </div>
-                            <div className="max-w-[608px] text-[#1d2130] text-5xl font-bold font-roboto leading-[57.60px]">
+                            <div className="max-w-[608px] text-[#1d2130] text-4xl md:text-5xl font-bold font-roboto leading-[57.60px]">
                                 Empowering Communities Through Diverse Programs
                             </div>
-                            <div className="w-[608px] text-[#525560] text-base font-normal font-roboto leading-relaxed">
+                            <div className="max-w-[608px] text-[#525560] text-base font-normal font-roboto leading-relaxed">
                                 At Rising Hope Network, we offer a range of
                                 services designed to address critical issues
                                 affecting disadvantaged populations in Malawi.
                             </div>
-                            <div className="flex flex-col gap-6 mt-8 pl-6">
+                            <div className="flex flex-col gap-6 mt-8 md:pl-6">
                                 <div className="flex gap-6">
                                     <div className="w-[28px] h-[28px] bg-[#f2c94c] rounded-[20px]">
                                         <img
@@ -235,7 +246,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-[40%] pt-[31px]">
+                    <div className="w-full md:w-[40%] pt-[31px]">
                         <img
                             src="/images/girl.jpg"
                             alt="about"
@@ -245,9 +256,9 @@ function Home() {
                 </div>
             </section>
 
-            <section className="w-full container mx-auto max-w-[1200px] py-[96px]">
+            <section className="w-full px-5 lg:px-0 container mx-auto max-w-[1200px] py-[96px]">
                 <div className="flex  gap-6">
-                    <div className="w-[80px]">
+                    <div className="hidden md:block w-[80px]">
                         <img
                             src="/images/line.png"
                             alt="line"
@@ -258,20 +269,20 @@ function Home() {
                         <div className="text-[#1d2130] text-base font-bold font-roboto uppercase tracking-widest">
                             Our Portfolio
                         </div>
-                        <div className="max-w-[640px] text-[#1d2130] text-5xl font-bold font-roboto leading-[57.60px] mt-8 pl-3">
+                        <div className="max-w-[640px] text-[#1d2130] text-4xl md:text-5xl font-bold font-roboto leading-[57.60px] mt-8 md:pl-3">
                             Making a Difference in Malawian Communities
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-3 gap-6 mt-[65px]">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-[65px]">
                     {Projects.map((project) => (
                         <div
-                            className="px-12 pt-[60px] pb-[48px] rounded-[20px] relative flex flex-col justify-between bg-center bg-cover"
+                            className="px-6 lg:px-12 pt-[60px] pb-[48px] rounded-[20px] relative flex flex-col justify-between bg-center bg-cover"
                             style={{
                                 backgroundImage: `url(${project.image})`,
                             }}
                         >
-                            <div className="z-10 max-w-[315px] text-white text-[28px] font-bold font-roboto leading-[42px]">
+                            <div className="z-10 max-w-[315px] text-white text-2xl md:text-[28px] font-bold font-roboto leading-[42px]">
                                 {project.name}
                             </div>
                             <div className="z-10 max-w-[315px] text-white text-base font-normal font-roboto leading-relaxed mt-4">

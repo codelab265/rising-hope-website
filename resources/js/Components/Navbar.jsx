@@ -2,6 +2,8 @@ import { Link, usePage } from "@inertiajs/react";
 import React from "react";
 import { Button } from "./ui/button";
 
+import MobileMenu from "./MobileMenu";
+
 function Navbar() {
     const { url } = usePage();
     const NavbarLinks = [
@@ -20,11 +22,6 @@ function Navbar() {
             href: "/what-we-do",
             route: "what-we-do",
         },
-        {
-            name: "Projects",
-            href: "/projects",
-            route: "projects",
-        },
 
         {
             name: "Contact",
@@ -34,7 +31,7 @@ function Navbar() {
     ];
     return (
         <header className="w-full">
-            <div className="container max-w-[1200px] mx-auto">
+            <div className="container px-5 lg:px-0 max-w-[1200px] mx-auto">
                 <div className="flex justify-between items-center py-4">
                     <Link
                         href="/"
@@ -49,7 +46,7 @@ function Navbar() {
                             Rising Hope
                         </span>
                     </Link>
-                    <nav className="hidden md:flex gap-10">
+                    <nav className="hidden lg:flex gap-10">
                         {NavbarLinks.map((item) => (
                             <Link
                                 key={item.route}
@@ -64,11 +61,14 @@ function Navbar() {
                             </Link>
                         ))}
                     </nav>
-                    <Link href="/donate">
-                        <Button className="text-base font-medium font-roboto px-8 bg-[#1d2130] hover:bg-[#1d2130]/80">
-                            Donate
-                        </Button>
-                    </Link>
+                    <div className="flex items-center gap-4">
+                        <MobileMenu />
+                        <Link href="/donate" className="hidden md:block">
+                            <Button className="text-base font-medium font-roboto px-8 bg-[#1d2130] hover:bg-[#1d2130]/80">
+                                Donate
+                            </Button>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </header>

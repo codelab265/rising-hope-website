@@ -18,38 +18,40 @@ function Footer() {
             href: "/what-we-do",
             route: "what-we-do",
         },
-        {
-            name: "Projects",
-            href: "/projects",
-            route: "projects",
-        },
+
         {
             name: "Contact",
             href: "/contact",
             route: "contact",
+        },
+
+        {
+            name: "Donate",
+            href: "/donate",
+            route: "donate",
         },
     ];
 
     const SocialLinks = [
         {
             name: "Facebook",
-            href: "https://www.facebook.com/risinghope.org.ng",
+            href: "https://www.facebook.com/risinghopenetwork?mibextid=ZbWKwL",
         },
         {
             name: "Instagram",
-            href: "https://www.instagram.com/risinghope.org.ng",
+            href: "https://www.instagram.com/risinghopenetwork/profilecard/?igsh=MWl5ZGw5YmQ3dG5iZA==",
         },
         {
-            name: "Twitter",
-            href: "https://www.twitter.com/risinghope.org.ng",
+            name: "X",
+            href: "https://x.com/risinghope23",
         },
         {
             name: "LinkedIn",
-            href: "https://www.linkedin.com/company/risinghope.org.ng",
+            href: "https://www.linkedin.com/company/rising-hope-network",
         },
         {
             name: "YouTube",
-            href: "https://www.youtube.com/channel/UC6666666666666666",
+            href: "https://www.youtube.com/@RisingHopeNetwork",
         },
     ];
 
@@ -74,7 +76,7 @@ function Footer() {
 
     return (
         <div className="bg-[#0b0706] mx-auto">
-            <div className="container mx-auto max-w-[1200px]  grid grid-cols-4 pt-[86px] pb-[96px]">
+            <div className="px-5 mx-auto max-w-[1200px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-[86px] pb-[96px] gap-10">
                 <div className="">
                     <img
                         src="/images/logo-white.png"
@@ -93,7 +95,7 @@ function Footer() {
                         </Link>
                     ))}
                 </div>
-                <div className="flex flex-col gap-4">
+                {/* <div className="flex flex-col gap-4">
                     <h3 className="text-white text-sm font-normal font-roboto leading-snug">
                         More
                     </h3>
@@ -106,19 +108,20 @@ function Footer() {
                             {link.name}
                         </Link>
                     ))}
-                </div>
+                </div> */}
                 <div className="flex flex-col gap-4">
                     <h3 className="text-white text-sm font-normal font-roboto leading-snug">
                         Connect with us
                     </h3>
                     {SocialLinks.map((link) => (
-                        <Link
+                        <a
                             href={link.href}
                             key={link.name}
                             className="opacity-80 text-white text-sm font-normal font-roboto leading-snug hover:opacity-100"
+                            target="_blank"
                         >
                             {link.name}
-                        </Link>
+                        </a>
                     ))}
                 </div>
             </div>

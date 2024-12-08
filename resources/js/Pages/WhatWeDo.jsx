@@ -44,9 +44,9 @@ function WhatWeDo() {
     return (
         <MainLayout>
             <Head title="What We Do" />
-            <section className="container max-w-[1200px] mx-auto flex mt-[76px] pb-[96px]">
-                <div className="w-[70%] flex gap-6">
-                    <div className="w-[80px]">
+            <section className="container px-5 lg:px-0 max-w-[1200px] mx-auto flex flex-col-reverse md:flex-row gap-10 mt-[76px] pb-[96px]">
+                <div className="w-full md:w-[70%] flex gap-6">
+                    <div className="hidden md:block w-[80px]">
                         <img
                             src="/images/line.png"
                             alt="line"
@@ -57,7 +57,7 @@ function WhatWeDo() {
                         <div className="text-[#1d2130] text-base font-bold font-roboto uppercase tracking-widest">
                             What We Do
                         </div>
-                        <div className=" text-[#1d2130] text-[56px] font-bold font-roboto leading-[67.20px]">
+                        <div className=" text-[#1d2130] text-[38px] md:text-[56px] font-bold font-roboto leading-[67.20px]">
                             Transforming Lives Across Malawi and Beyond
                         </div>
                         <div className="max-w-[594px] text-[#525560] text-base font-normal font-roboto leading-relaxed">
@@ -72,7 +72,7 @@ function WhatWeDo() {
                         </div>
                     </div>
                 </div>
-                <div className="w-[30%]">
+                <div className="w-full md:w-[30%]">
                     <img
                         className="w-full h-full object-cover rounded-[20px]"
                         src="./images/whawedo.jpg"
@@ -82,13 +82,13 @@ function WhatWeDo() {
             </section>
 
             <section className="bg-[#fbecc6] pt-[96px] pb-[104px]">
-                <div className="container max-w-[1200px] mx-auto">
+                <div className="px-5 lg:px-0 container max-w-[1200px] mx-auto">
                     <div className="text-[#1d2130] text-5xl font-bold font-roboto leading-[57.60px]">
                         What we do
                     </div>
-                    <div className="grid grid-cols-3 mt-[64px] gap-[48px]">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-[64px] gap-[48px]">
                         {/* Mobile Outreach Programs */}
-                        <div className="flex gap-6">
+                        <div className="flex gap-6 group cursor-pointer">
                             <div className="w-7 h-7">
                                 <img
                                     src="/images/outreach.png"
@@ -100,7 +100,7 @@ function WhatWeDo() {
                                 <div className="text-[#1d2130] text-2xl font-bold font-roboto">
                                     Mobile Outreach Programs
                                 </div>
-                                <div className="text-[#525560] text-sm font-normal font-roboto leading-snug mt-2 line-clamp-3">
+                                <div className="text-[#525560] text-sm font-normal font-roboto leading-snug mt-2 line-clamp-3 group-hover:line-clamp-none transition-all duration-500">
                                     RHN has implemented mobile outreach programs
                                     to reach individuals living in remote areas.
                                     The programs provide training on health &
@@ -114,7 +114,7 @@ function WhatWeDo() {
                         </div>
 
                         {/* Youth Empowerment Programs */}
-                        <div className="flex gap-6">
+                        <div className="flex gap-6 group cursor-pointer">
                             <div className="w-7 h-7">
                                 <img
                                     src="/images/health-icon.png"
@@ -126,7 +126,7 @@ function WhatWeDo() {
                                 <div className="text-[#1d2130] text-2xl font-bold font-roboto">
                                     Youth Empowerment Programs
                                 </div>
-                                <div className="text-[#525560] text-sm font-normal font-roboto leading-snug mt-2 line-clamp-3">
+                                <div className="text-[#525560] text-sm font-normal font-roboto leading-snug mt-2 line-clamp-3 group-hover:line-clamp-none transition-all duration-500 ">
                                     RHN has established youth empowerment
                                     programs to equip young people with the
                                     necessary skills to succeed in the modern
@@ -143,7 +143,7 @@ function WhatWeDo() {
                         </div>
 
                         {/* Education */}
-                        <div className="flex gap-6">
+                        <div className="flex gap-6 group cursor-pointer">
                             <div className="w-7 h-7">
                                 <img
                                     src="/images/scholar-icon.png"
@@ -155,7 +155,7 @@ function WhatWeDo() {
                                 <div className="text-[#1d2130] text-2xl font-bold font-roboto">
                                     Education
                                 </div>
-                                <div className="text-[#525560] text-sm font-normal font-roboto leading-snug mt-2 line-clamp-3">
+                                <div className="text-[#525560] text-sm font-normal font-roboto leading-snug mt-2 line-clamp-3 group-hover:line-clamp-none transition-all duration-500">
                                     RHN continuously conducts educational
                                     workshops in schools that focus on various
                                     topics, including sexual reproductive health
