@@ -48,7 +48,7 @@ function Home() {
             name: "Covid-19 Outreach at Yepa Full Primary School",
             Description:
                 "Distributed COVID-19 fighting materials and provided information about harassment prevention to 900 beneficiaries.",
-            image: "/images/project1.png",
+            image: "/images/students-sitting.jpg",
             content:
                 "On November 19, 2020, Rural Health Network (RHN) made a significant impact at Yepa Full Primary School by conducting a well-received COVID-19 outreach program. The initiative reached 900 beneficiaries, comprising 640 students (390 girls and 250 boys) and 260 parents and teachers. Distribution of COVID-19 protective materials was one of the outreach's main objectives. RHN made sure that the school community was prepared to stop the virus's spread as the pandemic changed people's lives all over the world. Students, teachers, and parents were given necessary supplies like face masks and hand sanitizers, which emphasized the value of maintaining personal hygiene both inside and outside of the classroom.<br/><br/> In addition to being useful tools for instant protection, these materials helped beneficiaries develop long-term hygiene habits. The program sought to protect people and stop possible outbreaks in the neighborhood by promoting the regular use of masks and hand sanitizers.<br/><br/> Apart from tackling the difficulties caused by COVID-19, the outreach program also addressed harassment, which is a serious problem. Through lively discussions, RHN raised awareness of the negative impacts of harassment and underlined how crucial it is to provide a safe and encouraging environment for all people, especially young students. <br/><br/>Participants received instruction on how to identify harassment, comprehend its different manifestations, and know when to seek assistance if they are impacted. Proactive steps to stop harassment and promote respect among community members were also highlighted in the program. <br/></br>The outreach program’s success was rooted in its inclusive approach. By involving students, teachers, and parents, RHN ensured that the message of health, safety, and respect reached all facets of the school community. Students, as the future leaders, were empowered with knowledge to protect themselves and advocate for a better future. Teachers and parents, as role models and caregivers, were equipped to reinforce these messages at home and in the classroom.<br/><br/>Interactive sessions, practical demonstrations, and open discussions created an environment where participants could ask questions and share experiences.In addition to enhancing a sense of unity and shared responsibility among the school community, this coordinated approach deepened understanding.",
         },
@@ -155,9 +155,9 @@ function Home() {
 
                 <div className="w-full md:w-[40%]">
                     <div
-                        className="w-full h-[578.34px] bg-cover bg-center bg-no-repeat overflow-hidden rounded-[20px] flex items-center justify-center"
+                        className="w-full h-[578.34px] bg-cover bg-right bg-no-repeat overflow-hidden rounded-[20px] flex items-center justify-center"
                         style={{
-                            backgroundImage: "url('/images/project1.png')",
+                            backgroundImage: "url('/images/guy.jpg')",
                         }}
                     >
                         <a
