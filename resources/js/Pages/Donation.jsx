@@ -27,11 +27,15 @@ function Donation() {
                             children with special needs—an investment in the
                             leaders of tomorrow.
                         </div>
-                        <div className="h-[51px] w-fit px-8 py-4 bg-primary rounded backdrop-blur-[80px] justify-center items-center gap-2.5 inline-flex mt-8 cursor-pointer">
+                        <a
+                            href="https://pay.paychangu.com/SC-DOlEWo"
+                            target="_blank"
+                            className="h-[51px] w-fit px-8 py-4 bg-primary rounded backdrop-blur-[80px] justify-center items-center gap-2.5 inline-flex mt-8 cursor-pointer"
+                        >
                             <div className="text-right text-black text-base font-medium font-roboto">
                                 Donate now
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div className="w-full md:w-[30%]">

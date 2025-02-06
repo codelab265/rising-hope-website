@@ -26,11 +26,14 @@ function Events() {
                     Join us in empowering Malawians to rise above poverty!
                 </div>
                 <div className="mt-8 flex gap-8">
-                    <Link href="/donate">
+                    <a
+                        href="https://pay.paychangu.com/SC-DOlEWo"
+                        target="_blank"
+                    >
                         <Button className="text-base font-medium text-black font-roboto">
                             Make a donation
                         </Button>
-                    </Link>
+                    </a>
                 </div>
             </div>
             <div className="mt-[84px] flex flex-col">

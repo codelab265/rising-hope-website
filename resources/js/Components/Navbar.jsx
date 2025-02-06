@@ -42,9 +42,17 @@ function Navbar() {
                             alt="Rising Hope"
                             className="w-20 h-auto  "
                         />
-                        <span className="text-black text-2xl font-bold font-roboto leading-[44px]">
-                            Rising Hope
-                        </span>
+                        <div className="flex flex-col -space-y-3">
+                            <div className="text-black text-2xl font-bold font-roboto">
+                                Rising
+                            </div>
+                            <div className="text-black text-2xl font-bold font-roboto">
+                                Hope
+                            </div>
+                            <div className="text-black text-2xl font-bold font-roboto">
+                                Network
+                            </div>
+                        </div>
                     </Link>
                     <nav className="hidden lg:flex gap-10">
                         {NavbarLinks.map((item) => (
@@ -63,11 +71,15 @@ function Navbar() {
                     </nav>
                     <div className="flex items-center gap-4">
                         <MobileMenu />
-                        <Link href="/donate" className="hidden md:block">
+                        <a
+                            href="https://pay.paychangu.com/SC-DOlEWo"
+                            target="_blank"
+                            className="hidden md:block"
+                        >
                             <Button className="text-base font-medium font-roboto px-8 bg-[#1d2130] hover:bg-[#1d2130]/80">
                                 Donate
                             </Button>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>
